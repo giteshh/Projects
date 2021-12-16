@@ -14,6 +14,12 @@ function addTodo(event){
 
     event.preventDefault();
 
+    if( todoInput.value === ''){
+        alert("Plz add a task");
+    }else{
+       
+    
+   
     //create div
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
@@ -41,7 +47,7 @@ function addTodo(event){
     todoList.appendChild(todoDiv);
 
     todoInput.value = '';
-
+    }
 }
 
 function deleteCheck(e){
